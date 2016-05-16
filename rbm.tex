@@ -43,6 +43,123 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{AlphaGo}
+\begin{itemize}
+\item AlphaGo Vs. Lee Sedol 9-Dan: 4:1
+\begin{figure}
+      \includegraphics[width=0.8\textwidth]{figs/alphago0.png}
+\end{figure}
+\item How does it work? 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{AlphaGo}
+\begin{itemize}
+\item Core problem: Learn $\mathbf{P(}$\textbf{next action}$ | $\textbf{current state}$\mathbf{)}$
+\begin{figure}
+      \includegraphics[width=0.9\textwidth]{figs/alphago1.png}
+\end{figure}
+\item Data: Online Go experts (5-9 dan) 160K games, 30M board positions.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{AlphaGo}
+\begin{itemize}
+\item Core problem: Learn $\mathbf{P(}$\textbf{next action}$ | $\textbf{current state}$\mathbf{)}$
+\begin{figure}
+      \includegraphics[width=0.9\textwidth]{figs/alphago2.png}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{AlphaGo}
+\begin{itemize}
+\item Core problem: Learn $\mathbf{P(}$\textbf{next action}$ | $\textbf{current state}$\mathbf{)}$
+\begin{figure}
+      \includegraphics[width=0.9\textwidth]{figs/alphago3.png}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{AlphaGo}
+\begin{itemize}
+\item Core problem: Learn $\mathbf{P(}$\textbf{next action}$ | $\textbf{current state}$\mathbf{)}$
+\begin{figure}
+      \includegraphics[width=0.9\textwidth]{figs/alphago4.png}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{AlphaGo}
+\begin{itemize}
+\item Reducing ``action candidates'' (Breadth Reduction in Search Space)
+\begin{itemize}
+\item \tr{Policy Network}
+\item Predicts the next action 
+\end{itemize}
+\item Board evaluation (Depth Reduction)
+\begin{itemize}
+\item \tr{Value Network}
+\item Predicts values between 0 (a bad board position) to 1 (a good board position) 
+\end{itemize}
+\end{itemize}
+\begin{figure}
+      \includegraphics[width=0.23\textwidth]{figs/alphago6.png}
+      \hspace{0.3in}
+      \includegraphics[width=0.21\textwidth]{figs/alphago7.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{AlphaGo}
+\begin{itemize}
+\item Looking ahead: Monte Carlo Search Tree
+\vspace{0.1in}
+\begin{figure}
+      \includegraphics[width=0.93\textwidth]{figs/alphago8.png}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{AlphaGo}
+\begin{itemize}
+\item Core problem: Learn $\mathbf{P(}$\textbf{next action}$ | $\textbf{current state}$\mathbf{)}$
+\begin{figure}
+      \includegraphics[width=0.9\textwidth]{figs/alphago5.png}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Large Scale Visual Recognition Challenge 2015}
+\begin{itemize}
+\item Scene classification: identify the scene category depicted in a photograph.
+\item Data: \textbf{10+ million} images belonging to \textbf{400+} unique scene categories.
+\item Champion: ResNet (MSRA)
+\begin{itemize}
+\item A very \textit{deep} network: depth of up to \tr{152} layers. 
+\end{itemize}
+\begin{figure}
+      \includegraphics[width=0.75\textwidth]{figs/ca-ilsvrc.jpg}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example of ResNet (Right: 34 parameter layers ResNet)}
+\begin{figure}
+      \includegraphics[width=0.3\textwidth]{figs/resnet.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
 \frametitle{Deep Learning = Learning Representations/Features}
 \begin{figure}
       \includegraphics[width=1\textwidth]{figs/intro1.png}
@@ -77,12 +194,14 @@
 \end{figure}
 \end{frame}
 
+\hide{
 \begin{frame}
 \frametitle{Inspired By Nature, But Not Too Much}
 \begin{figure}
       \includegraphics[width=1\textwidth]{figs/intro6.png}
 \end{figure}
 \end{frame}
+}
 
 \begin{frame}
 \frametitle{Three Types of Deep Architectures}
@@ -126,6 +245,7 @@
 \end{figure}
 \end{frame}
 
+\hide{
 \begin{frame}
 \frametitle{Discovering Hidden Structure in High-Dimensional Data}
 \begin{figure}
@@ -140,13 +260,13 @@
 \end{figure}
 \end{frame}
 
-
 \begin{frame}
 \frametitle{Overall Architecture}
 \begin{figure}
       \includegraphics[width=1\textwidth]{figs/intro15.png}
 \end{figure}
 \end{frame}
+}
 
 \section{Neural Network}
 
